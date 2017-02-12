@@ -1,4 +1,5 @@
 require 'yaml'
+require 'csv'
 
 task :insertMoc => :environment do
   fname = ENV['fileName']
@@ -10,6 +11,19 @@ task :insertMoc => :environment do
   end
 end
 
+task :insertEvents => :environment do
+  fname = "./data/events.csv"
+  content = File.read(fname)
+  csv = CSV.parse(content, :headers => true)
+  csv.each do |row|
+    h = row.to_hash
+    print h
+  end
+end
+
+def convertEntryToEvent(entry)
+
+end
 
 def convertEntryToMoc(entry)
   moc = Moc.new 

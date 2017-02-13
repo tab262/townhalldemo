@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'welcome#index'
   namespace :api, defaults: { format: :json },
-    constraints: { subdomain: 'api' }, path: '/'  do
+    #constraints: { subdomain: 'api' }, 
+    path: '/api/'  do
     scope module: :v1 do
       # We are going to list our resources here
       resources :mocs, :only => [:show]

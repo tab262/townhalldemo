@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     constraints: { subdomain: 'api' }, path: '/'  do
     scope module: :v1 do
       # We are going to list our resources here
+      resources :mocs, :only => [:show]
     end
   end
 end

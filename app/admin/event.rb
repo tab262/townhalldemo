@@ -32,5 +32,6 @@ ActiveAdmin.register Event do
     end
     column :zip
     column :notes
+    actions
   end
 end

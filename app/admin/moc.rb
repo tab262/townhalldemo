@@ -1,4 +1,6 @@
 ActiveAdmin.register Moc do
+  menu priority: 1
+  menu label: "Members of Congress"
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

@@ -65,6 +65,7 @@ gem 'draper'
 gem 'pundit'
 gem 'bower-rails'
 gem 'rake', '< 11.0'
+gem 'angular-rails-templates'
 
 
 ruby '2.3.1'

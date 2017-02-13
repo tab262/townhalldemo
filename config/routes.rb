@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     path: '/api/'  do
     scope module: :v1 do
       # We are going to list our resources here
-      resources :mocs, :only => [:show]
+      resources :mocs, :only => [:show,:index]
     end
   end
 end

@@ -1,0 +1,18 @@
+<div>
+  <form role="form" >
+    <div class="form-group">
+      <label for="moc_name">Name</label> <input type="text"
+                                                        class="form-control"
+                                                        id="moc_name"
+                                                        name="moc_name"
+                                                        ng-model="controller.moc_name"/>
+
+
+      <button ng-click="controller.getEvent()" class="btn btn-primary">Get Event</button>
+    </div>
+    <br>
+  </form>
+</div>
+<div>
+  {{controller.results}}
+</div>
